@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex-2-js-revision-second</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="parent">
+
+        <form action="">
+            <fieldset>
+                <div class="con">
+    
+                    <h3>Facture</h3>
+                    <!-- Taux TVA -->
+                    <div class="taux-tva-con">
+                        <label for="">Taux TVA</label>
+                        <div class="r-con">
+                            <div class="nine-con">
+                                <input type="radio" name="taux-tva" id="nine" />
+                                <label for="nine">9%</label>
+                            </div>
+                            <div class="eleven-con">
+                                <input type="radio" name="taux-tva" id="eleven" />
+                                <label for="eleven">11%</label>
+                            </div>
+                            <div class="nineteen-con">
+                                <input type="radio" name="taux-tva" id="nineteen" />
+                                <label for="nineteen">19%</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Produit -->
+                    <div class="prd-con">
+                        <label for="prd-select">Produit</label>
+                        <select name="prd" id="prd-select"></select>
+                    </div>
+    
+                    <!-- Quantite -->
+                    <div class="qte-con">
+                        <label for="qte">Quantite</label>
+                        <input type="number" name="qte" id="qte" />
+                    </div>
+    
+                    <!-- Prix HT -->
+                    <div class="prix-ht-con">
+                        <label for="prix-ht">Prix HT</label>
+                        <input type="number" name="prix-ht" id="prix-ht" readonly />
+                    </div>
+    
+                    <!-- Montant -->
+                    <div class="montant-con">
+                        <label for="montant">Montant</label>
+                        <input type="number" name="montant" id="montant" readonly />
+                    </div>
+    
+                    <!-- Total TTC -->
+                    <div class="total-ttc-con">
+                        <label for="total-ttc">Total TTC</label>
+                        <input type="number" name="total-ttc" id="total-ttc" readonly />
+                    </div>
+    
+                    <!-- Buttons -->
+                    <div class="btns-con">
+                        <button id="e-btn" type="button">Effacer</button>
+                        <button id="c-btn" type="button">Calculer</button>
+                    </div>
+            
+                </div>
+            </fieldset>
+        </form>
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
